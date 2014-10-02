@@ -1,1 +1,2 @@
-docker build -t afcowie/debian:jessie .
+docker build -t anchor.private/afcowie/debian:jessie .
+docker push anchor.private/afcowie/debian:jessie
