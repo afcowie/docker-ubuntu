@@ -5,11 +5,6 @@ ENV DEBIAN_FRONTEND noninteractive
 ADD apt/apt.conf /etc/apt/apt.conf
 ADD apt/sources.list /etc/apt/sources.list
 
-# This is utterly horrid. I wish docker supported injecting environment
-# variables. But it doesn't, so we have no choice but to set it here.
-ENV http_proxy  http://172.17.42.1:8123/
-ENV https_proxy http://172.17.42.1:8123/
-
 RUN apt-get update
 RUN apt-get install wget apt-utils locales
 
