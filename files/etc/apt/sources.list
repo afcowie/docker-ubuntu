@@ -1,0 +1,3 @@
+deb http://mirror.internode.on.net/pub/debian/ stretch main
+deb http://mirror.internode.on.net/pub/debian/ stretch-updates main
+deb http://security.debian.org/ stretch/updates main

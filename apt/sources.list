@@ -1,3 +1,0 @@
-deb http://mirror.internode.on.net/pub/debian/ jessie main
-deb http://mirror.internode.on.net/pub/debian/ jessie-updates main
-deb http://security.debian.org/ jessie/updates main

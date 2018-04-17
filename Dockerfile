@@ -1,9 +1,9 @@
-FROM debian:jessie
-MAINTAINER Andrew Cowie <andrew@operationaldynamics.com>
+FROM docker.io/library/debian:stretch
 
 ENV DEBIAN_FRONTEND noninteractive
-ADD apt/apt.conf /etc/apt/apt.conf
-ADD apt/sources.list /etc/apt/sources.list
+
+# Copy in apt.conf and sources.list
+COPY files/. /
 
 RUN apt-get update
 RUN apt-get install wget apt-utils locales
