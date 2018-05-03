@@ -1,4 +1,5 @@
 FROM docker.io/library/debian:stretch
+COPY .stamp /
 
 ENV DEBIAN_FRONTEND noninteractive
 

@@ -1,3 +1,2 @@
-deb http://172.17.0.2/pub/debian/ stretch main
-deb http://172.17.0.2/pub/debian/ stretch-updates main
-deb http://security.debian.org/ stretch/updates main
+deb http://packages/debian/ stretch main
+deb http://packages/debian/ stretch-updates main
