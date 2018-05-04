@@ -1,4 +1,4 @@
-FROM docker.io/library/debian:stretch
+FROM docker.io/library/ubuntu:bionic
 COPY .stamp /
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -10,7 +10,8 @@ COPY files/root/. /root
 RUN apt-get update
 RUN apt-get install apt-utils locales
 
-# Put a locale in place which understands UTF8
-RUN locale-gen C.UTF-8 && update-locale LANG=C.UTF-8
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
+# Put a locale in place which understands UTF8;
+# for some reason "C.UTF-8" doesn't work on Ubuntu like it does Debian.
+RUN locale-gen en_CA.UTF-8 && update-locale LANG=en_CA.UTF-8
+ENV LANG en_CA.UTF-8
+ENV LC_ALL en_CA.UTF-8

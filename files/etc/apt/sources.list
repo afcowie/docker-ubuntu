@@ -1,2 +1,2 @@
-deb http://packages/debian/ stretch main
-deb http://packages/debian/ stretch-updates main
+deb http://packages/ubuntu/ bionic main
+deb http://packages/ubuntu/ bionic-updates main

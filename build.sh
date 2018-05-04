@@ -3,6 +3,6 @@ if [ ! -f .stamp ] ; then
 fi
 
 docker build \
-	--tag=localhost/afcowie/debian:stretch \
+	--tag=localhost/afcowie/ubuntu:bionic \
 	--network=proxy \
 	.
